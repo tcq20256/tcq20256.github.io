@@ -269,7 +269,7 @@ rm -rf /*"></textarea>
 	  
 <input id="search-input" style="width: 30%;" placeholder="输入要查找的文本" value='https?:\/\/[^\s/$.?#]+[^\s]*?(?=")'>
 <input id="replace-input" style="width: 30%;" placeholder="输入要替换的文本">
-<input type="text" class="form-control mx-3" id="api_key" name="api_key" style="display:none;" style="width: 41%;" placeholder="sk-dxDQ2KcZkaImAjiBCc8b27076bCf4eE9A82a655c35D41a30">
+<input type="text" class="form-control mx-3" id="api_key" name="api_key" style="display:none;" style="width: 41%;" placeholder="sk-9VdbxTaSz4hn8l4oB984D8878b6146FaBeFc4229B6979bE0">
 </div>
   </div>
 	
@@ -460,7 +460,7 @@ function testAPI() {
     const apiKey = inputField.value.trim() || inputField.placeholder;
 
     const data = {
-        model: "gpt-3.5-turbo",
+        model: "gpt-4o-mini-2024-07-18",
         messages: [
             { role: "system", content: "You are a helpful assistant." },
             { role: "user", content: originalInput }
