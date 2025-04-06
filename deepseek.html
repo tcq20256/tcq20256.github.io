@@ -54,15 +54,17 @@
       border-radius: 4px;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      white-space: nowrap;
     }
     .button:hover {
       background-color: #45a049;
     }
-    /* 按钮组及输入组 */
+    /* 按钮组：一排显示不换行，超出部分自动滚动 */
     .button-group, .input-group, .button-container {
       display: flex;
+      flex-wrap: nowrap;
       justify-content: space-around;
-      flex-wrap: wrap;
+      overflow-x: auto;
       margin-bottom: 20px;
     }
     /* 文件、数字和文本输入框 */
@@ -182,10 +184,10 @@
           document.getElementById('performance-result').textContent = `页面加载: ${loadTime.toFixed(2)} ms`;
         });
       </script>
-      <span id="delay" style="padding: 5px 10px; font-size: 12px; color: #999; border: 1px solid #ccc; border-left: none;">
+      <span id="delay" style="padding: 5px 10px; font-size: 6px; color: #999; border: 1px solid #ccc; border-left: none;">
         <script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="https://v6-widget.51.la/v6/JRHGRBPWC7lJIaXq/quote.js?theme=0&f=12&display=0,0,1,1,0,0,0,0"></script>
       </span>
-      <span id="performance-result" style="padding: 6px 11px; font-size: 12px; color: #999; border: 1px solid #ccc; border-right: none;">
+      <span id="performance-result" style="padding: 6px 11px; font-size: 6px; color: #999; border: 1px solid #ccc; border-right: none;">
         页面加载完成时间: -- ms
       </span>
     </div>
