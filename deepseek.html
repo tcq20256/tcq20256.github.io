@@ -49,13 +49,13 @@
   background-color: #4CAF50;
   color: white;
   border: none;
-  padding: 5px 10px;   /* 减小内边距 */
-  margin: 3px;         /* 减小外边距 */
+  padding: 7px 12px;   /* 减小内边距 */
+  margin: 5px;         /* 减小外边距 */
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   white-space: nowrap;
-  font-size: 10px;     /* 调整字体大小 */
+  font-size: 12px;     /* 调整字体大小 */
 }
     .button:hover {
       background-color: #45a049;
@@ -126,10 +126,10 @@
 
     <!-- 功能按钮 -->
     <div class="button-group">
-      <button class="button" onclick="convertToBase64()">文码</button>
-      <button class="button" onclick="convertFromBase64()">码文</button>
-      <button class="button" onclick="extractFrames()">视频帧</button>
-      <button class="button" onclick="clearOutput()">清空</button>
+      <button class="button" onclick="convertToBase64()">文件转编码</button>
+      <button class="button" onclick="convertFromBase64()">编码转文件</button>
+      <button class="button" onclick="extractFrames()">视频帧看图</button>
+      <button class="button" onclick="clearOutput()">清空文件</button>
     </div>
 
     <!-- 文本编辑区 -->
@@ -137,11 +137,11 @@
     
     <!-- 文本相关功能按钮 -->
     <div class="input-group">
-      <button class="button" id="copy-btn">复制</button>
-      <button class="button" id="remove-duplicates-btn">去重</button>
+      <button class="button" id="copy-btn">复制文本</button>
+      <button class="button" id="remove-duplicates-btn">去重复行</button>
       <!-- 修改【文本】按钮绑定的功能为调用 DeepSeek Chat 接口 -->
-      <button class="button" id="openkey-btn" data-api-url="https://api.deepseek.com/v1/chat/completions">文本</button>
-      <button class="button" id="clear-btn">清空</button>
+      <button class="button" id="openkey-btn" data-api-url="https://api.deepseek.com/v1/chat/completions">测试文本</button>
+      <button class="button" id="clear-btn">清空文本</button>
     </div>
     
     <!-- API响应展示区域 -->
