@@ -45,18 +45,18 @@
       resize: vertical;
     }
     /* 统一按钮样式 */
-.button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 7px 12px;   /* 减小内边距 */
-  margin: 5px;         /* 减小外边距 */
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  white-space: nowrap;
-  font-size: 12px;     /* 调整字体大小 */
-}
+    .button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 7px 12px;
+      margin: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      white-space: nowrap;
+      font-size: 12px;
+    }
     .button:hover {
       background-color: #45a049;
     }
@@ -135,8 +135,8 @@
     <!-- 文本编辑区 -->
     <textarea id="textarea" placeholder="输入文本或粘贴 Base64 数据。"></textarea>
     
-    <!-- 文本相关功能按钮 -->
-    <div class="input-group">
+    <!-- 文本相关功能按钮（添加唯一 id textGroup）-->
+    <div class="input-group" id="textGroup">
       <button class="button" id="copy-btn">复制文本</button>
       <button class="button" id="remove-duplicates-btn">去重复行</button>
       <!-- 修改【文本】按钮绑定的功能为调用 DeepSeek Chat 接口 -->
@@ -305,6 +305,12 @@
         textarea.value = uniqueLines.join('\n');
         updateStats();
       }
+      
+      // 新增函数：隐藏统计信息和文本相关功能区域
+      function hideStatsAndTextGroup() {
+        document.getElementById('stats').style.display = 'none';
+        document.getElementById('textGroup').style.display = 'none';
+      }
     </script>
 
     <!-- 视频、图片及 Base64 转换相关脚本 -->
@@ -345,6 +351,8 @@
       }
 
       function convertToBase64() {
+        // 隐藏统计信息和文本相关功能区域
+        hideStatsAndTextGroup();
         const file = document.getElementById('fileInput').files[0];
         if (file) {
           const reader = new FileReader();
@@ -362,6 +370,8 @@
       }
 
       function convertFromBase64() {
+        // 隐藏统计信息和文本相关功能区域
+        hideStatsAndTextGroup();
         const base64Input = textarea.value.trim();
         if (base64Input) {
           const parts = base64Input.split(',');
@@ -396,6 +406,8 @@
       }
 
       function extractFrames() {
+        // 隐藏统计信息和文本相关功能区域
+        hideStatsAndTextGroup();
         const file = document.getElementById('fileInput').files[0];
         const fps = parseInt(document.getElementById('intervalInput').value, 10);
         if (!file || !file.type.startsWith('video/')) {
