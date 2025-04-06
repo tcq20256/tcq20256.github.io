@@ -125,8 +125,8 @@
 
     <!-- 功能按钮 -->
     <div class="button-group">
-      <button class="button" onclick="convertToBase64()">文转码</button>
-      <button class="button" onclick="convertFromBase64()">编转文</button>
+      <button class="button" onclick="convertToBase64()">文码</button>
+      <button class="button" onclick="convertFromBase64()">码文</button>
       <button class="button" onclick="extractFrames()">视频帧</button>
       <button class="button" onclick="clearOutput()">清空</button>
     </div>
@@ -178,15 +178,7 @@
 
     <!-- 底部信息 -->
     <div style="display: flex; justify-content: center; align-items: center;">
-      <script>
-        window.addEventListener('load', function() {
-          const loadTime = performance.now();
-          document.getElementById('performance-result').textContent = `页面加载: ${loadTime.toFixed(2)} ms`;
-        });
-      </script>
-      <span id="delay" style="padding: 5px 10px; font-size: 6px; color: #999; border: 1px solid #ccc; border-left: none;">
-        <script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="https://v6-widget.51.la/v6/JRHGRBPWC7lJIaXq/quote.js?theme=0&f=12&display=0,0,1,1,0,0,0,0"></script>
-      </span>
+  
       <span id="performance-result" style="padding: 6px 11px; font-size: 6px; color: #999; border: 1px solid #ccc; border-right: none;">
         页面加载完成时间: -- ms
       </span>
