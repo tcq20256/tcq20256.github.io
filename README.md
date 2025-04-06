@@ -43,3 +43,6 @@ Ctrl+Shift+加号 # 插入列或行
 Ctrl+方向键 # 跳转到行列的首尾
 ```
 
+## LICENSE
+
+[MIT](https://opensource.org/license/mit/)
