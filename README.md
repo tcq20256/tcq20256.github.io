@@ -1,4 +1,4 @@
-## <a href="https://github.com/feeday/WebPage/edit/main/README.md" target="_blank">Code Editing Adding</a>
+## Code Editing Adding
 - [x]  网址分类收藏、围棋魔方小游戏
 - [x]  收益利率计算、文本正则查找替换
 - [x]  网易音乐播放器、倒计时正计时功能
@@ -7,7 +7,7 @@
 - [ ]  代办代码优化整理优化删减重复引用代码 
 - [ ]  暂时还没有想到这个是占位专用的显示区
 
-## <a href="https://feeday.cn/page" target="_blank">Puck Host Demo WebPage </a>：
+## TCQ233 Host Demo WebPage
 - <a href="https://code.visualstudio.com/Download" target="_blank">Visual Studio Code Python Download Pro</a>
 - <a href="https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans" target="_blank">Chinese Language-Visual Studio Code</a>
 - <a href="https://marketplace.visualstudio.com/items?itemName=FittenTech.Fitten-Code" target="_blank">Fitten Code-Visual Studio Code</a>
