@@ -1,13 +1,13 @@
-## Code Editing Adding
+## TCQ233 Demo WebPage
 - [x]  网址分类收藏、围棋魔方小游戏
 - [x]  收益利率计算、文本正则查找替换
 - [x]  网易音乐播放器、倒计时正计时功能
 - [x]  编码互转视音图、中英互译、视频转图
-- [x]  文本接入 DeepSeek 垃圾信总封我域名
+- [x]  文本接入 DeepSeek 垃圾某信总封我域名
 - [ ]  开源托管网页容量达到1GB、100G月流量
 - [ ]  代办代码优化整理优化删减重复引用代码 
 
-## TCQ233 Host Demo WebPage
+## PC Program
 - <a href="https://code.visualstudio.com/Download" target="_blank">Visual Studio Code Python Download Pro</a>
 - <a href="https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans" target="_blank">Chinese Language-Visual Studio Code</a>
 - <a href="https://marketplace.visualstudio.com/items?itemName=FittenTech.Fitten-Code" target="_blank">Fitten Code-Visual Studio Code</a>
@@ -24,21 +24,6 @@
 - <a href="http://potplayer.tv/" target="_blank">Video Play</a>
 - <a href="https://www.ocenaudio.com" target="_blank">Audio Play Edit</a>
 - <a href="https://www.pazera-software.com/products/audio-extractor" target="_blank">Audio Format Conversion</a>
-
-
-
-## Autogen
-
-- <a href="https://github.com/microsoft/autogen" target="_blank">Autogen Github</a>
-- <a href="https://www.anaconda.com/download" target="_blank">Anaconda Download</a>
-
-```
-conda create -n autogenstudio python=3.10
-conda activate autogenstudio
-pip install autogenstudio
-autogenstudio ui --port 8081
-```
-
 
 ## Egular Expression
 ```
