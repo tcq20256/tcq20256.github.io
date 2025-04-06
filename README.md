@@ -5,7 +5,6 @@
 - [x]  编码互转视音图、中英互译、视频转图
 - [ ]  开源托管网页容量达到1GB、100G月流量
 - [ ]  代办代码优化整理优化删减重复引用代码 
-- [ ]  暂时还没有想到这个是占位专用的显示区
 
 ## TCQ233 Host Demo WebPage
 - <a href="https://code.visualstudio.com/Download" target="_blank">Visual Studio Code Python Download Pro</a>
