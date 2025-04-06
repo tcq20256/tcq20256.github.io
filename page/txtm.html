@@ -151,7 +151,7 @@
     <div class="input-group">
       <button class="button" id="copy-btn">复制</button>
       <button class="button" id="remove-duplicates-btn">去重</button>
-      <button class="button" id="openkey-btn" data-api-url="https://giegie.green/v1/chat/completions">文本</button>
+      <button class="button" id="openkey-btn" data-api-url="https://api.deepseek.com/v1">文本</button>
       <button class="button" id="clear-btn">清空</button>
     </div>
     
@@ -210,7 +210,7 @@
 
     <!-- 隐藏的 API Key 输入框 -->
     <div class="input-group" style="display: flex; overflow: hidden; width: 95%; padding: 5px; margin: 0 auto;">
-      <input type="text" id="api_key" name="api_key" placeholder="sk-vrfZIb32CIpkS5BnBd6a301240424781936d3b8a42708f54" style="display:none;">
+      <input type="text" id="api_key" name="api_key" placeholder="sk-36db62a0e3134c3985ee3d88281e38cf" style="display:none;">
     </div>
 
     <script>
@@ -266,7 +266,7 @@
         textarea.value = "处理中...";
 
         const data = {
-          model: "gpt-4o-mini",
+          model: "deepseek-chat",
           messages: [
             { role: "system", content: "你是一个能干的助手，只用汉字回复。" },
             { role: "user", content: originalInput }
