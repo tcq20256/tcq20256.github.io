@@ -78,9 +78,16 @@ body {
 
  </head> 
  <body style="overflow:-Scroll;overflow-y:hidden"> 
- <header class="bar">   <form name="keyword" class="search" id="search" action="https://m.bilibili.com/search?"> 
+ <header class="bar">   <form name="keyword" class="search" id="search" action="https://m.weibo.cn/search" method="get"> 
     <div class="search-row"> 
-     <input type="search" name="keyword" id="query" /> 
+	     <input type="hidden" name="containerid" value="100103type=1" />
+   <input
+      type="search"
+      name="q"
+      id="query"
+      placeholder="搜索微博"
+      required
+    />
      <span class="placeholder "><span class="iconfont icon-sousuo"></span><span class="text"></span></span> 
     </div> 
   </header> 
