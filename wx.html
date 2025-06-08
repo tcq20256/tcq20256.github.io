@@ -75,6 +75,27 @@ body {
   display: none
 }
 
+.search-row {
+  position: relative;  /* 保证伪元素定位正常 */
+}
+
+.search-row:before {
+  content: "\e600";           /* 换成你 iconfont 项目里“搜索”图标的 Unicode */
+  font-family: "iconfont";    /* 跟你引入的字体名称保持一致 */
+  position: absolute;
+  left: 15px;                 /* 根据你想要的间距调整 */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;            /* 按需调整图标大小 */
+  color: #666;                /* 按需调整图标颜色 */
+  pointer-events: none;       /* 不影响输入框交互 */
+}
+
+.search-row input[type=search] {
+  padding-left: 45px;         /* 为图标预留空间，保持文字样式其余不变 */
+}
+
+	  
 </style> 
 
  </head> 
